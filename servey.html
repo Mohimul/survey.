@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+  
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F5CBA7;
+    width: 100%;
+    height: auto;
+    color: #323838;
+    font-size: 1.3vw;
+}
+/* 
+.heading
+{
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 40%;
+     
+} */
+
+.main
+{
+    padding: 0% 20% 0% 20%;
+
+}
+
+#titile
+{
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
+}
+
+
+#description
+{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
+}
+
+
+#survey-form
+{
+    background-color: rgb(184, 189, 178);
+    border-radius: 7px;
+    padding: 3rem 2.5rem;
+}
+
+
+#submit {
+    background: #535c57;
+    color: rgb(48, 44, 44);
+    padding: .7rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+  #submit:hover {
+    background: rgb(100, 55, 65);
+  }
+
+
+  .form {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 6px;
+    font-size: 1.0rem;
+    border: none;
+  }
+  
+  @media only screen and (max-width:480px){
+
+    #main {
+      padding: 0% 0% 0% 0%;
+      }
+    }
+
+ 
+</style>
+
+
+
+<body>
+    <div class="heading">
+        <h1 id="titile">Coding Lover.</h1>
+        <p id="description">Freecodecamp is a very helpful for me.</p>
+    </div>
+
+
+    <div class="main">
+        <form id="survey-form" action="">
+            <div class="input-fields">
+                <label id="name-label"><b> Name : </b></label>
+                <input id="name" type="name" name="name" placeholder="Name" class="name">
+                <br><br>
+                <label id="email-label"><b>Email : </b></label>
+                <input id="email" type="email" name="email" placeholder="Email" class="email">
+                <br><br>
+                <label id="number-label"> <b>Number : </b></label>
+                <input id="number" type="number" name="number" placeholder="12+" class="number" min="5" max="99"
+                    placeholder="12+">
+                <br><br>
+            </div>
+
+
+
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Learning language</strong></label><br><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="Html">Html</option>
+                    <option value="Css">Css</option>
+                    <option value="Js">Js</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                </select>
+            </div>
+
+
+            <div id="button-area">
+                <br>
+                <label id="job-label"><b>Programing site:</b></label><br><br>
+                <input type="radio" name="gender" class="radio-inline" value="developer" checked> Web-Developer <br>
+                <input type="radio" name="gender" class="radio-inline" value="designer">Designer <br>
+                <input type="radio" name="gender" class="radio-inline" value="freelancer">Freelancer <br>
+                <input type="radio" name="gender" class="radio-inline" value="youtuber">Youtuber <br>
+            </div>
+
+
+            <div id="button-area"><br>
+                <label id="os-label"><b>Operating system experience: </b></label><br>
+                <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
+                <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
+                <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
+            </div>
+
+
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Learning language</strong></label><br><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="Html">Html</option>
+                    <option value="Css">Css</option>
+                    <option value="Js">Js</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                </select>
+            </div>
+
+            <div id="button-area"><br><br>
+                <label id="os-label"><b>Latest technology :</b></label><br>
+                <input type="checkbox" name="tech1" value="flutter"> Java<br>
+                <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+                <input type="checkbox" name="tech3" value="tnflow"> Html<br>
+                <input type="checkbox" name="tech3" value="git"> Github<br>
+                <input type="checkbox" name="tech3" value="devops"> Python<br>
+            </div>
+
+
+            <div id="ending"><br><br>
+                <label id="comments-label"> Do you have any suggestion about this programing??</label><br>
+                <textarea class="form" style="height: 120px;"
+                    placeholder="Please feel free to write your feedback"></textarea> <br><br><br>
+                    <input id="submit" type="submit"  class="form">
+           
+                </div>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
